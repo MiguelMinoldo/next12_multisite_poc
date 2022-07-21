@@ -11,6 +11,8 @@ import { SitecorePageProps } from 'lib/page-props';
 import { sitecorePagePropsFactory } from 'lib/page-props-factory';
 import { componentFactory } from 'temp/componentFactory';
 import { sitemapFetcher } from 'lib/sitemap-fetcher';
+import { getSitesPaths } from 'lib/multisite/sites';
+import Site from 'lib/type/Site';
 
 const SitecorePage = ({ notFound, componentProps, layoutData }: SitecorePageProps): JSX.Element => {
   useEffect(() => {
@@ -45,7 +47,12 @@ export const getStaticPaths: GetStaticPaths = async (context) => {
 
   if (process.env.NODE_ENV !== 'development') {
     // Note: Next.js runs export in production mode
-    const paths = await sitemapFetcher.fetch(context);
+    const sites = (await getSitesPaths()) as unknown as Site[];
+    const pages = await sitemapFetcher.fetch(sites, context);
+    const paths = pages.map((page) => ({
+      params: { site: page.params.site, path: page.params.path },
+      locale: page.locale,
+    }));
 
     return {
       paths,

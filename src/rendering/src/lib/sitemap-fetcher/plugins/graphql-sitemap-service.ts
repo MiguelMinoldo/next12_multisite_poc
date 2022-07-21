@@ -1,9 +1,11 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { GraphQLSitemapService } from '@sitecore-jss/sitecore-jss-nextjs';
 import config from 'temp/config';
 import { SitemapFetcherPlugin } from '..';
 import { GetStaticPathsContext } from 'next';
 import pkg from '../../../../package.json';
-import { StaticPath } from '@sitecore-jss/sitecore-jss-nextjs';
+import { StaticPathExt } from 'lib/type/StaticPathExt';
+import Site from 'lib/type/Site';
 
 class GraphqlSitemapServicePlugin implements SitemapFetcherPlugin {
   _graphqlSitemapService: GraphQLSitemapService;
@@ -22,14 +24,37 @@ class GraphqlSitemapServicePlugin implements SitemapFetcherPlugin {
     });
   }
 
-  async exec(context?: GetStaticPathsContext): Promise<StaticPath[]> {
-    if (process.env.EXPORT_MODE) {
-      // Disconnected Export mode
-      if (process.env.JSS_MODE !== 'disconnected') {
-        return this._graphqlSitemapService.fetchExportSitemap(pkg.config.language);
+  async exec(sites: Site[], _context?: GetStaticPathsContext): Promise<StaticPathExt[]> {
+    let paths = new Array<StaticPathExt>();
+    for (let i = 0; i < sites?.length; i++) {
+      const site = sites[i]?.site || config.jssAppName;
+      this._graphqlSitemapService.options.siteName = site;
+      this._graphqlSitemapService.options.rootItemId = sites[i].rootItemId;
+      if (process.env.EXPORT_MODE) {
+        // Disconnected Export mode
+        if (process.env.JSS_MODE !== 'disconnected') {
+          const p = (await this._graphqlSitemapService.fetchExportSitemap(
+            pkg.config.language
+          )) as StaticPathExt[];
+          paths = paths.concat(
+            p.map((page) => ({
+              params: { path: page.params.path, site: site },
+              locale: page.locale,
+            }))
+          );
+        }
       }
+      const p = (await this._graphqlSitemapService.fetchSSGSitemap(
+        sites[i].languages || []
+      )) as StaticPathExt[];
+      paths = paths.concat(
+        p.map((page) => ({
+          params: { path: page.params.path, site: site },
+          locale: page.locale,
+        }))
+      );
     }
-    return this._graphqlSitemapService.fetchSSGSitemap(context?.locales || []);
+    return paths;
   }
 }
 

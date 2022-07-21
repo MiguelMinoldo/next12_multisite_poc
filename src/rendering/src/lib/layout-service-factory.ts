@@ -6,12 +6,12 @@ import {
 import config from 'temp/config';
 
 export class LayoutServiceFactory {
-  create(): LayoutService {
+  create(site?: string): LayoutService {
     return process.env.FETCH_WITH === 'GraphQL'
       ? new GraphQLLayoutService({
           endpoint: config.graphQLEndpoint,
           apiKey: config.sitecoreApiKey,
-          siteName: config.jssAppName,
+          siteName: site ?? config.jssAppName,
         })
       : new RestLayoutService({
           apiHost: config.sitecoreApiHost,

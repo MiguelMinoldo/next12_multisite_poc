@@ -26,18 +26,16 @@ function extractPath(params: ParsedUrlQuery | undefined): string {
 }
 
 class NormalModePlugin implements Plugin {
-  private dictionaryService: DictionaryService;
-  private layoutService: LayoutService;
+  private dictionaryService: DictionaryService | undefined;
+  private layoutService: LayoutService | undefined;
 
   order = 0;
 
-  constructor() {
-    this.dictionaryService = dictionaryServiceFactory.create();
-    this.layoutService = layoutServiceFactory.create();
-  }
-
   async exec(props: SitecorePageProps, context: GetServerSidePropsContext | GetStaticPropsContext) {
     if (context.preview) return props;
+    const site = context?.params?.site?.toString();
+    this.dictionaryService = dictionaryServiceFactory.create(site!);
+    this.layoutService = layoutServiceFactory.create(site!);
 
     /**
      * Normal mode

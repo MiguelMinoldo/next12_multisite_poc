@@ -1,6 +1,7 @@
 import { DisconnectedSitemapService } from '@sitecore-jss/sitecore-jss-nextjs';
 import { ManifestInstance } from '@sitecore-jss/sitecore-jss-dev-tools';
 import { SitemapFetcherPlugin } from '..';
+import { StaticPathExt } from 'lib/type/StaticPathExt';
 
 class DisconnectedSitemapServicePlugin implements SitemapFetcherPlugin {
   _disconnectedSitemapService: DisconnectedSitemapService;
@@ -35,7 +36,7 @@ class DisconnectedSitemapServicePlugin implements SitemapFetcherPlugin {
     if (process.env.EXPORT_MODE) {
       // Disconnected Export mode
       if (process.env.JSS_MODE === 'disconnected') {
-        return this._disconnectedSitemapService.fetchExportSitemap();
+        return this._disconnectedSitemapService.fetchExportSitemap() as StaticPathExt[];
       }
     }
 
