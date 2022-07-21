@@ -1,0 +1,16 @@
+{
+    "namespace": "multisite_poc-Content",
+    "references": [ "multisite_poc" ],
+    "items": {
+        "includes": [
+            {
+                "name": "content",
+                "path": "/sitecore/content/multisite_poc"
+            },
+            {
+                "name": "media",
+                "path": "/sitecore/media library/multisite_poc"
+            }
+        ]
+    }
+}

@@ -1,0 +1,33 @@
+﻿---
+ID: "71e9389b-4b26-5288-9cdd-f49b5a8c5260"
+Parent: "968d2d69-be3b-538f-9892-a6916e75b5ce"
+Template: "d044a12d-cf84-59a0-ba34-d91b365575c2"
+Path: "/sitecore/content/multisite_poc/home/styleguide/Page Components/styleguide-jss-styleguide-section-2DC6F673949B444299BAB3374AFBA216DE2E4A2FC06DE66DB0A60C7DC44909155D"
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: "Styleguide-SitecoreContext-1"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20220721T094009Z
+    - ID: "69cc644a-d5db-5650-8dcc-a79b3dac2382"
+      Hint: description
+      Value: "<p><small>The Sitecore Context contains route-level data about the current context - for example, <code>pageState</code> enables conditionally executing code based on whether Sitecore is in Experience Editor or not.</small></p>"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5cfc8060-2059-4695-8a70-8e9c53a7e49a"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\JssImport
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20220721T094009Z
+    - ID: "fb372306-8105-5964-866b-d47730a2dd8b"
+      Hint: heading
+      Value: Sitecore Context

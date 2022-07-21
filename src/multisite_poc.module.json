@@ -1,0 +1,24 @@
+{
+    "namespace": "multisite_poc",
+    "references": [ "InitItems" ],
+    "items": {
+        "includes": [
+            {
+                "name": "layouts",
+                "path": "/sitecore/layout/Layouts/Project/multisite_poc"
+            },
+            {
+                "name": "placeholders",
+                "path": "/sitecore/layout/Placeholder Settings/Project/multisite_poc"
+            },
+            {
+                "name": "renderings",
+                "path": "/sitecore/layout/Renderings/Project/multisite_poc"
+            },
+            {
+                "name": "templates",
+                "path": "/sitecore/templates/Project/multisite_poc"
+            }
+        ]
+    }
+}

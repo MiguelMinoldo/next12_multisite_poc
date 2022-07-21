@@ -1,0 +1,49 @@
+﻿---
+ID: "13707ccb-a779-5fb7-9654-923831dd7c5e"
+Parent: "968d2d69-be3b-538f-9892-a6916e75b5ce"
+Template: "d54096a7-35a3-558f-8af7-13742f5286a0"
+Path: "/sitecore/content/multisite_poc/home/styleguide/Page Components/styleguide-jss-styleguide-section-B7FCF54E14D2DDEE96747EE3CC441EBE9A4FE9EE7D90F5ABCCDE076F5B72DBDA43"
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: "Styleguide-FieldUsage-Link-9"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20220721T094004Z
+    - ID: "5754c440-a397-5b68-a5fb-6b30f4a33230"
+      Hint: externalLink
+      Value: |
+        <link text="Link to Sitecore" url="https://www.sitecore.com" linktype="external" />
+    - ID: "69cc644a-d5db-5650-8dcc-a79b3dac2382"
+      Hint: description
+      Value: <p>A <em>General Link</em> is a field that represents an <code>&lt;a&gt;</code> tag.</p>
+    - ID: "870578ed-0311-5223-b987-adfb14627bb5"
+      Hint: emailLink
+      Value: |
+        <link text="Send an Email" url="mailto:foo@bar.com" linktype="mailto" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "084da843-6913-4472-ba69-9dda29ca4a94"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\JssImport
+    - ID: "d73c9ccc-6c79-57c9-b1a0-634320c6b950"
+      Hint: paramsLink
+      Value: |
+        <link target="_blank" text="Sitecore Dev Site" title="&lt;a&gt; title attribute" url="https://dev.sitecore.net" class="font-weight-bold" linktype="external" />
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20220721T094004Z
+    - ID: "f5baf9e2-6ec2-5565-ae01-25b790384ba4"
+      Hint: internalLink
+      Value: |
+        <link linktype="internal" id="{D12FF89F-E8A6-5A68-83A8-69F3EB2475CD}" />
+    - ID: "fb372306-8105-5964-866b-d47730a2dd8b"
+      Hint: heading
+      Value: General Link

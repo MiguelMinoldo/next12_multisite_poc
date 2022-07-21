@@ -1,0 +1,68 @@
+﻿---
+ID: "e57e5d78-bcdf-58d1-b119-6150127ffe40"
+Parent: "594b031f-5fe0-5f09-8648-a98cd066f517"
+Template: "45590eba-d923-5ebe-8be4-903c228e66c3"
+Path: "/sitecore/content/multisite_poc/home/Page Components/home-jss-main-ContentBlock-1"
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: "ContentBlock-1"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20220721T093948Z
+    - ID: "83b11299-3d7f-5486-bb64-a25a1167e916"
+      Hint: heading
+      Value: Welcome to Sitecore JSS
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f054e466-fe5a-4a21-a904-19f547912593"
+    - ID: "95f897ec-a2e8-53fa-8bec-005d41f047b4"
+      Hint: content
+      Value: |
+        <p>Thanks for using JSS!! Here are some resources to get you started:</p>
+        
+        <h3><a href="https://jss.sitecore.com" rel="noopener noreferrer">Documentation</a></h3>
+        <p>The official JSS documentation can help you with any JSS task from getting started to advanced techniques.</p>
+        
+        <h3><a href="/styleguide">Styleguide</a></h3>
+        <p>The JSS styleguide is a living example of how to use JSS, hosted right in this app.
+        It demonstrates most of the common patterns that JSS implementations may need to use,
+        as well as useful architectural patterns.</p>
+        
+        <h3><a href="/graphql">GraphQL</a></h3>
+        <p>JSS features integration with the Sitecore GraphQL API to enable fetching non-route data from Sitecore - or from other internal backends as an API aggregator or proxy.
+        This route is a living example of how to use an integrate with GraphQL data in a JSS app.</p>
+        
+        <div class="alert alert-dark">
+          <h4>This app is a boilerplate</h4>
+          <p>The JSS samples are a boilerplate, not a library. That means that any code in this app is meant for you to own and customize to your own requirements.</p>
+          <p>Want to change the lint settings? Do it. Want to read manifest data from a MongoDB database? Go for it. This app is yours.</p>
+        </div>
+        
+        <div class="alert alert-dark">
+          <h4>How to start with an empty app</h4>
+          <p>To start with a fresh app with no boilerplate, run <code>jss create {name of your app} nextjs --empty</code>. Note, disconnected mode is not supported this way</p>
+          <p>To remove all of the default sample content (the Styleguide and GraphQL routes) and start out with an empty JSS app:</p>
+          <ol>
+            <li>Delete <code>/data/dictionary/*.yml</code></li>
+            <li>Delete <code>/data/routes/styleguide</code> and <code>/data/routes/graphql</code></li>
+            <li>Delete <code>/data/content/Styleguide</code></li>
+            <li>Delete <code>/data/component-content/Styleguide</code></li>
+            <li>Delete <code>/sitecore/definitions/components/Styleguide*</code>, <code>/sitecore/definitions/templates/Styleguide*</code>, and <code>/sitecore/definitions/components/GraphQL*</code></li>
+            <li>Delete <code>graphql-let</code> command from <code>bootstrap</code> npm command in <code>package.json</code> until you create <code>.graphql</code> files</li>
+            <li>Delete <code>/src/components/*</code></li>
+          </ol>
+        </div>
+        
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\JssImport
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20220721T093949Z

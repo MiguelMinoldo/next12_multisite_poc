@@ -1,0 +1,39 @@
+﻿---
+ID: "b938d780-2b94-52ae-a4df-4268965b4574"
+Parent: "968d2d69-be3b-538f-9892-a6916e75b5ce"
+Template: "5944d657-4e91-55a3-9c99-7f2a53f64832"
+Path: "/sitecore/content/multisite_poc/home/styleguide/Page Components/styleguide-jss-styleguide-section-B72E8A8C2BECDAB18A594708D0B3EDB52EDE9F5632472BA60396A7FAC6BE58BFFD"
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: "Styleguide-FieldUsage-Text-2"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20220721T093958Z
+    - ID: "69cc644a-d5db-5650-8dcc-a79b3dac2382"
+      Hint: description
+      Value: "<small>Multi-line text tells Sitecore to use a <code>textarea</code> for editing; consumption in JSS is the same as single-line text.</small>"
+    - ID: "73059efd-ed57-5db6-bf14-1a66d9b3ae6f"
+      Hint: sample2
+      Value: "This is another sample multi-line text field using rendering options. <mark>HTML supported with encode=false.</mark>"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8ba64e3c-8d1d-477c-ab7d-178fd30fcc7b"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\JssImport
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20220721T093958Z
+    - ID: "f4930ab7-b15c-56ff-9314-c53446bf3735"
+      Hint: sample
+      Value: "This is a sample multi-line text field. <mark>HTML is encoded.</mark> In Sitecore, editors will see a textarea."
+    - ID: "fb372306-8105-5964-866b-d47730a2dd8b"
+      Hint: heading
+      Value: "Multi-Line Text"

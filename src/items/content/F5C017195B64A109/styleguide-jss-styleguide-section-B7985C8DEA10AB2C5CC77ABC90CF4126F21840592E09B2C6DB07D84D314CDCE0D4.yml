@@ -1,0 +1,52 @@
+﻿---
+ID: "8e00549d-4f0a-59b5-b617-4c579c85bb54"
+Parent: "968d2d69-be3b-538f-9892-a6916e75b5ce"
+Template: "209dcaea-1a7c-598d-8414-b635772710b1"
+Path: "/sitecore/content/multisite_poc/home/styleguide/Page Components/styleguide-jss-styleguide-section-B7985C8DEA10AB2C5CC77ABC90CF4126F21840592E09B2C6DB07D84D314CDCE0D4"
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: "Styleguide-FieldUsage-ContentList-11"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20220721T094005Z
+    - ID: "58ce2971-fafc-5ff0-8678-170ab2784c86"
+      Hint: localContentList
+      Value: |
+        {7EFE8C9B-7E83-55AB-8651-28067C4C3F72}
+        {30831544-7B5E-5DA8-AD5D-6653B8DFF938}
+    - ID: "69cc644a-d5db-5650-8dcc-a79b3dac2382"
+      Hint: description
+      Value: |
+        <p>
+          <small>
+            Content Lists are a way to reference zero or more other content items.
+            Referenced items may be shared.
+            To reference a single content item, use an <em>Item Link</em> field.<br />
+            <strong>Note:</strong> Sitecore does not support inline editing of Content List fields. The value must be edited in Experience Editor by using the edit rendering fields button (looks like a pencil) with the whole component selected.
+          </small>
+        </p>
+        
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "005cb038-6a6e-4340-8bcc-a98d6cddd05b"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\JssImport
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20220721T094006Z
+    - ID: "e4d34258-c64b-55fa-b83c-a2c741d4ba97"
+      Hint: sharedContentList
+      Value: |
+        {340EBEC8-8490-5128-B4B9-AD32E6396370}
+        {D9C80927-E585-57EC-BC8B-E94991884FC6}
+    - ID: "fb372306-8105-5964-866b-d47730a2dd8b"
+      Hint: heading
+      Value: Content List

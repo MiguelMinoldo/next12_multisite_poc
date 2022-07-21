@@ -1,0 +1,36 @@
+﻿---
+ID: "a36b1fa8-3daf-5085-9de5-f19dfcd29711"
+Parent: "968d2d69-be3b-538f-9892-a6916e75b5ce"
+Template: "6a7bd533-c6d9-567b-a5ae-a21188d6ea18"
+Path: "/sitecore/content/multisite_poc/home/styleguide/Page Components/styleguide-jss-styleguide-section-B7466F088988ADC3AF823B71B1D08EB5543ABE8080B5DCA82AE17317EBC6A7840F"
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: "Styleguide-FieldUsage-Number-6"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20220721T094003Z
+    - ID: "4be9a675-297f-57f4-be78-b36a2027aa7c"
+      Hint: sample
+      Value: 1.21
+    - ID: "69cc644a-d5db-5650-8dcc-a79b3dac2382"
+      Hint: description
+      Value: <small>Number tells Sitecore to use a number entry for editing.</small>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3f91351b-c114-468e-b928-e8193218cdd3"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\JssImport
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20220721T094003Z
+    - ID: "fb372306-8105-5964-866b-d47730a2dd8b"
+      Hint: heading
+      Value: Number

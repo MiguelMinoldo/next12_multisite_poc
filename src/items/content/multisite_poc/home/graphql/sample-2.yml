@@ -1,0 +1,43 @@
+﻿---
+ID: "972b0d67-13cb-5b50-8001-97201008d0dc"
+Parent: "b5d031cd-766b-5862-9df8-f377dc44ef76"
+Template: "ef80b5ff-9df4-522b-af4d-7b3e7e5a135f"
+Path: "/sitecore/content/multisite_poc/home/graphql/sample-2"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{5C424448-2B30-5910-ABE7-5021B762D542}"
+              p:after="*[1=2]"
+              s:rname="ContentBlock"
+              s:ds="{D1F082BC-CFF7-5BD3-B51A-573DA8ED2C6D}"
+              s:id="{0F53D8B4-2644-5E86-9060-59CA86F04D3F}"
+              s:par=""
+              s:ph="/jss-main" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20220721T093955Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7037c5c1-ae29-49b3-9d2c-b4899759814e"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\JssImport
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20220721T093956Z
+    - ID: "fb87b655-7bb8-511f-9c8e-d18fde9b627e"
+      Hint: pageTitle
+      Value: Sample 2 Page Title

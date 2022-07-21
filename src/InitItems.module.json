@@ -1,0 +1,23 @@
+{
+    "namespace": "InitItems",
+    "items" : {
+        "includes": [
+            {
+                "name": "content-root",
+                "path": "/sitecore/content",
+                "scope": "singleItem",
+                "allowedPushOperations": "createAndUpdate"
+            },
+            {
+                "name": "api-key",
+                "path": "/sitecore/system/Settings/Services/API Keys/multisite_poc",
+                "scope": "singleItem"
+            },
+            {
+                "name": "language",
+                "path": "/sitecore/system/Languages/da-DK",
+                "scope": "singleItem"
+            }
+        ]
+    }
+}
