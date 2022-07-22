@@ -16,7 +16,7 @@ export class LayoutServiceFactory {
       : new RestLayoutService({
           apiHost: config.sitecoreApiHost,
           apiKey: config.sitecoreApiKey,
-          siteName: config.jssAppName,
+          siteName: site ?? config.jssAppName,
           configurationName: 'default',
         });
   }

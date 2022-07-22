@@ -18,7 +18,7 @@ const hostnames = [
       subdomain: '',
       rootItemId: '{AD81037E-93BE-4AAC-AB08-0269D96A2B49}', 
       languages: [
-        'en-gb'
+        'en', 'en-GB'
       ],
       customDomain: 'www.multisite_poc_uk.localhost|next12-multisite-uk.vercel.app',
     },
@@ -48,15 +48,6 @@ export async function getHostnameDataOrDefault(
         : item.subdomain === subdomainOrCustomDomain
     ) ?? DEFAULT_HOST
   )
-}
-
-/**
- * Returns the data of the hostname based on its subdomain.
- *
- * This method is used by pages under middleware.ts
- */
-export async function getHostnameDataBySubdomain(subdomain: string) {
-  return hostnames.find((item) => item.subdomain === subdomain)
 }
 
 /**

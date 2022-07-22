@@ -71,7 +71,7 @@ export const getStaticPaths: GetStaticPaths = async (context) => {
 // revalidation (or fallback) is enabled and a new request comes in.
 export const getStaticProps: GetStaticProps = async (context) => {
   const props = await sitecorePagePropsFactory.create(context);
-
+  console.log('at getStaticProps, the site name in content param: ' + context?.params?.site);
   return {
     props,
     // Next.js will attempt to re-generate the page:

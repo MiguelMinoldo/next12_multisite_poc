@@ -32,10 +32,11 @@ class NormalModePlugin implements Plugin {
   order = 0;
 
   async exec(props: SitecorePageProps, context: GetServerSidePropsContext | GetStaticPropsContext) {
-    if (context.preview) return props;
     const site = context?.params?.site?.toString();
-    this.dictionaryService = dictionaryServiceFactory.create(site!);
-    this.layoutService = layoutServiceFactory.create(site!);
+    this.dictionaryService = dictionaryServiceFactory.create(site);
+    this.layoutService = layoutServiceFactory.create(site);
+
+    if (context.preview) return props;
 
     /**
      * Normal mode

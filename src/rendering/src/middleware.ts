@@ -19,18 +19,14 @@ export default async function middleware(req: NextRequest): Promise<NextResponse
     hostname?.replace(`.${process.env.ROOT_DOMAIN}`, '')
   const data = await getHostnameDataOrDefault(currentHost?.toString())
 
-  console.log('Site name: ' + data?.siteName)
-
   // Prevent security issues – users should not be able to canonically access
   // the pages/sites folder and its respective contents.
   if (url.pathname.startsWith(`/_sites`)) {
     url.pathname = `/404`
   } else {
     // rewrite to the current subdomain
-    url.pathname = `/_sites/${data?.subdomain}${data?.siteName}${url.pathname}`
+    url.pathname = `/_sites/${data?.subdomain}${data?.siteName}${url.pathname}`;
   }
-
-  console.log(url);
   
   return NextResponse.rewrite(url);
 }
