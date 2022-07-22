@@ -30,6 +30,7 @@ class GraphqlSitemapServicePlugin implements SitemapFetcherPlugin {
       const site = sites[i]?.site || config.jssAppName;
       this._graphqlSitemapService.options.siteName = site;
       this._graphqlSitemapService.options.rootItemId = sites[i].rootItemId;
+      console.log('Processing sitemap: Site: ' + site + 'Root Item ID: ' + sites[i].rootItemId);
       if (process.env.EXPORT_MODE) {
         // Disconnected Export mode
         if (process.env.JSS_MODE !== 'disconnected') {
