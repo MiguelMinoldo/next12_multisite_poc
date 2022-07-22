@@ -8,7 +8,7 @@ const hostnames = [
       languages: [
         'en'
       ],
-      customDomain: 'www.multisite_poc_global.localhost',
+      customDomain: 'www.multisite_poc_global.localhost|next12-multisite-global.vercel.app',
       // Default subdomain for Preview deployments and for local development
       defaultForPreview: true,
     },
@@ -20,7 +20,7 @@ const hostnames = [
       languages: [
         'en-gb'
       ],
-      customDomain: 'www.multisite_poc_uk.localhost',
+      customDomain: 'www.multisite_poc_uk.localhost|next12-multisite-uk.vercel.app',
     },
 ]
 // Returns the default site (Global)
@@ -44,7 +44,7 @@ export async function getHostnameDataOrDefault(
   return (
     hostnames.find((item) =>
       customDomain
-        ? item.customDomain === subdomainOrCustomDomain
+        ? item.customDomain.split('|').includes(subdomainOrCustomDomain)
         : item.subdomain === subdomainOrCustomDomain
     ) ?? DEFAULT_HOST
   )
